@@ -71,5 +71,10 @@ export VISUAL=vim
 export LESS=cSMnqifR
 eval $(lesspipe)
 
+export EMAIL=frol@hupp.se
+if [[ $(ssh-add -l) = *anyfi* ]]; then
+    EMAIL=fredrik.olofsson@anyfinetworks.com
+fi
+
 bindkey "${terminfo[kcuu1]}" history-substring-search-up
 bindkey "${terminfo[kcud1]}" history-substring-search-down
