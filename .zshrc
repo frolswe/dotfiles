@@ -58,16 +58,6 @@ function title {
   fi
 }
 
-# Inherit some ssh session environment into screen environment.
-alias screen="typeset -pm SSH_AUTH_SOCK SSH_CONNECTION DISPLAY >$HOME/.ssh/screen-environment; screen"
-function screen_source_env () {
-    source $HOME/.ssh/screen-environment
-}
-if [[ "$TERM" == screen* ]]; then
-    preexec_functions+=screen_source_env
-    screen_source_env
-fi
-
 export VISUAL=vim
 export LESS=cSMnqifR
 eval $(lesspipe)
