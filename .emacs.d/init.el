@@ -1,5 +1,12 @@
-(global-set-key (kbd "RET") 'electric-indent-just-newline)
 
+;; Added by Package.el.  This must come before configurations of
+;; installed packages.  Don't delete this line.  If you don't want it,
+;; just comment it out by adding a semicolon to the start of the line.
+;; You may delete these explanatory comments.
+(package-initialize)
+
+(global-set-key (kbd "RET") 'electric-indent-just-newline)
+(global-unset-key (kbd "C-z"))
 (setq c-default-style "gnu"
       c-basic-offset 4)
 
