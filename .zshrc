@@ -35,7 +35,7 @@ plugins=(history-substring-search)
 source $ZSH/oh-my-zsh.sh
 
 # Theme oh-my-zsh
-PROMPT='%{$fg_bold[red]%}➜  %{$fg[cyan]%}%~ %{$fg_bold[blue]%}$(git_prompt_info) %{$fg_bold[blue]%}%# %{$reset_color%}'
+PROMPT='%{$fg_bold[green]%}%n@%m%{$reset_color%}:%{$fg[cyan]%}%~ %{$fg_bold[blue]%}$(git_prompt_info) %{$fg_bold[blue]%}%# %{$reset_color%}'
 if [[ $SSH_CONNECTION != "" ]]; then
   ZSH_THEME_TERM_TITLE_IDLE="%n@%m: %~"
 else
