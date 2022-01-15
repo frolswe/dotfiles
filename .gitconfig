@@ -4,3 +4,5 @@
 	default = simple
 [user]
 	name = Fredrik Olofsson
+[init]
+	defaultBranch = main
